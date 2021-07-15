@@ -1,4 +1,4 @@
-.. TODo - Re-write for Cylc 8
+.. TODO - Re-write for Cylc 8
 
 
 .. _Disaster Recovery:
