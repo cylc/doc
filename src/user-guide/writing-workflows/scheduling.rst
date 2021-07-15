@@ -1705,12 +1705,12 @@ workflow so that only five consecutive cycles may run simultaneously.
 
 .. code-block:: cylc
 
-    [scheduling]
-        initial cycle point = 1
-        cycling mode = integer
-        runahead limit = P5
-        [[graph]]
-            P1 = foo
+   [scheduling]
+       initial cycle point = 1
+       cycling mode = integer
+       runahead limit = P5
+       [[graph]]
+           P1 = foo
 
 When this workflow is started the tasks ``foo.1`` -> ``foo.5`` will be submitted,
 however, the tasks from ``foo.6`` onwards are said to be "runahead limited"
